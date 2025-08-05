@@ -223,7 +223,12 @@ export const AddProject: React.FC<AddProjectProps> = ({ onBack, onProjectAdded }
                         onChange={() => toggleMember(user.id)}
                         className="text-orange-500 focus:ring-orange-500"
                       />
-                      <div>
+                      <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-2">
+                        <span className="text-white text-sm font-medium">
+                          {user.name.charAt(0).toUpperCase()}
+                        </span>
+                      </div>
+                      <div className="flex-1">
                         <p className="font-medium text-gray-900">{user.name}</p>
                         <p className="text-sm text-gray-500 capitalize">{user.role}</p>
                       </div>

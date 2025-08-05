@@ -226,7 +226,12 @@ export const ModuleTable: React.FC<ModuleTableProps> = ({ projectId }) => {
       }
       if (field.includes('review_status')) {
         const statusIcon = value === 'approved' ? '✅' : value === 'rejected' ? '❌' : '⏳';
-        return `${statusIcon} ${value}`;
+        return (
+          <span className="flex items-center space-x-1">
+            <span>{statusIcon}</span>
+            <span className="capitalize">{value}</span>
+          </span>
+        );
       }
       return value || '-';
     }

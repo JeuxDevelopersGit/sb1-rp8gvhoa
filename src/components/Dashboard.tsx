@@ -200,7 +200,8 @@ export const Dashboard: React.FC = () => {
             <CardDescription>Distribution of module statuses</CardDescription>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
                   data={statusData}
@@ -219,6 +220,7 @@ export const Dashboard: React.FC = () => {
                 <Tooltip />
               </PieChart>
             </ResponsiveContainer>
+            </div>
           </CardContent>
         </Card>
 
@@ -228,7 +230,8 @@ export const Dashboard: React.FC = () => {
             <CardDescription>Completion rate by sprint</CardDescription>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
               <BarChart data={sprintData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="sprint" />
@@ -238,6 +241,7 @@ export const Dashboard: React.FC = () => {
                 <Bar dataKey="completed" fill="#10B981" name="Completed" />
               </BarChart>
             </ResponsiveContainer>
+            </div>
           </CardContent>
         </Card>
       </div>

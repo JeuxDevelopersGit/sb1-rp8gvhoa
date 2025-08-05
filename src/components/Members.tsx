@@ -265,7 +265,9 @@ export const Members: React.FC = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-white" />
+                      <span className="text-white text-lg font-medium">
+                        {user.name.charAt(0).toUpperCase()}
+                      </span>
                     </div>
                     <div>
                       {editingId === user.id ? (

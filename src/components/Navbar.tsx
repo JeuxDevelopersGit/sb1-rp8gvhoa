@@ -28,7 +28,9 @@ export const Navbar: React.FC = () => {
             <>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                  <User className="w-4 h-4 text-white" />
+                  <span className="text-white text-sm font-medium">
+                    {profile.name.charAt(0).toUpperCase()}
+                  </span>
                 </div>
                 <div className="text-sm">
                   <p className="font-medium text-gray-900">{profile.name}</p>
