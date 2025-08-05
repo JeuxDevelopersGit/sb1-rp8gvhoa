@@ -115,6 +115,18 @@ A comprehensive project management system built for development teams with role-
    ```
 
 ### Demo Credentials
+
+**Important**: Demo credentials need to be created first!
+
+1. Click "Sign up" on the login screen
+2. Create an account with:
+   - **Email**: admin@jeux.com
+   - **Password**: 123123123
+   - **Name**: Admin User
+   - **Role**: admin
+3. After successful signup, you can use these credentials to sign in
+
+Once created, you can use:
 ```
 Email: admin@jeux.com
 Password: 123123123

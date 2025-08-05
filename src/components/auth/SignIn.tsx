@@ -129,9 +129,10 @@ export const SignIn: React.FC<SignInProps> = ({ onToggleMode }) => {
           </div>
 
           <div className="mt-4 p-3 bg-gray-50 rounded-md">
-            <p className="text-xs text-gray-600 font-medium mb-1">Demo Credentials:</p>
-            <p className="text-xs text-gray-500">Email: admin@jeux.com</p>
-            <p className="text-xs text-gray-500">Password: 123123123</p>
+            <p className="text-xs text-gray-600 font-medium mb-1">Demo Setup:</p>
+            <p className="text-xs text-gray-500">1. Click "Sign up" below</p>
+            <p className="text-xs text-gray-500">2. Create admin@jeux.com account</p>
+            <p className="text-xs text-gray-500">3. Then sign in here</p>
           </div>
         </CardContent>
       </Card>
